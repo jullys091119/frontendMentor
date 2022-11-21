@@ -1,0 +1,237 @@
+@font-face {
+  font-family: Alexandria ;
+  src: url(/fonts/Alexandria/Alexandria-VariableFont_wght.ttf);
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Alexandria;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 100%;
+  background-color: #0c1323 ;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+}
+
+.aside-perfil {
+  width: 30%;
+  padding-top: 147px;
+ 
+}
+
+.perfil-card{
+  border-radius: 12px;
+  height: 447px;
+  color: white;
+  overflow: hidden;
+  background-color: #1e204c;
+  margin-bottom: 10px;
+}
+
+.personal-data .pic-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #5847ea;
+  border-radius: 12px;
+  height: 260px;
+}
+
+.personal-data .report-name {
+  width: 190px;
+  margin-right: 20px;
+}
+
+.personal-data .report-name p {
+  margin: 7px;
+}
+
+.personal-data .report-name p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.personal-data img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-left: 25px;
+  object-fit: cover;
+}
+
+.perfil-card .date {
+  font-size: 20px;
+  line-height: 16px;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+.cards-information {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  align-content: center;
+
+}
+.cards-information .card-background-study {
+  background-color: #ff8a64;
+  position: relative;
+}
+
+.cards-information .card-background-control {
+  background-color:#56c1e6;
+  position: relative;
+}
+
+.cards-information .card-background-book {
+  background-color:#fe5e7d;
+  position: relative;
+}
+
+.cards-information .card-background-person {
+  background-color:#4dcf83;
+  position: relative;
+}
+
+.cards-information .card-background-msg {
+  background-color:#7335d3;
+  position: relative;
+}
+
+.cards-information .card-background-heart {
+  background-color:#f1c75a;
+  position: relative;
+}
+
+.card-img {
+  border-radius: 12px;
+  width: 30%;
+  height: 214px;
+  color: white;
+  overflow: hidden;
+  background-color: #1e204c;
+  margin-bottom: 10px;
+}
+
+.img  {
+ height: 50px;
+}
+
+.cards-information .card-background-study,.card-background-control,
+.card-background-book,.card-background-person,
+.card-background-msg,.card-background-heart,
+.img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-inside {
+  position: absolute;
+  height: 178px;
+  border-radius: 12px;
+  width: 100% !important;
+  margin-top: 43px;
+  background-color: #1e204c;
+  /* padding: 0px 11px 0 11px */
+  padding: 20px 30px 0 30px;
+}
+
+.information-inside-card {
+  color: white;
+  display:flex;
+  align-items: center;
+  font-size: 0.9rem;  
+  justify-content: space-between;
+}
+
+.img-bubble {
+  height: 6px;
+}
+
+.hours {
+  width: 100%;
+  font-size: .8rem;
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .card-inside {
+    padding: 20px 16px 0 16px;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .perfil-card .date {
+    display: flex;
+    justify-content: space-evenly;
+  }
+} 
+
+
+@media(min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: block;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    padding: 100px 8px 0 8px;
+  }
+
+  .cards-information {
+    display:block;
+    padding-bottom: 100px;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .personal-data .pic-name {
+    height: 160px;
+  }
+
+  .perfil-card {
+    height: 270px;
+  }
+  
+  .perfil-card .date {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .hours {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .card-inside {
+    padding: 60px 30px 0 30px;
+  }
+}
